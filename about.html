@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .about-section {
+            max-width: 1000px;
+            margin: 120px auto 50px;
+            padding: 0 20px;
+        }
+
+        .profile-container {
+            display: flex;
+            gap: 50px;
+            align-items: flex-start;
+            margin-bottom: 50px;
+        }
+
+        .profile-image {
+            flex: 0 0 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .profile-content {
+            flex: 1;
+        }
+
+        .interests {
+            margin-top: 30px;
+        }
+
+        .interests-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .interest-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .interest-item i {
+            font-size: 2rem;
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .profile-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .profile-image {
+                flex: 0 0 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Amar's</div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="about-section">
+        <div class="profile-container">
+            <div class="profile-image">
+                <img src="Profile.jpeg" alt="Your Name">
+            </div>
+            <div class="profile-content">
+                <h1>About Me</h1>
+                <p>Hi! I'm Amarendra Chowdary Kadambala, a dedicated software professional with over 5 years of experience in backend development, cloud computing, and DevOps. I am currently pursuing my Master’s in Computer Science at the University of South Dakota.</p>
+                
+                <p>I specialize in Java, Spring Boot, REST APIs, SQL, and AWS services. My passion lies in solving real-world problems through clean and scalable code. Previously, I worked at Equifax and Lince Soft Solutions, where I contributed to projects involving cloud migration, CI/CD pipelines, and application support.</p>
+                
+                <p>My goal is to grow as a backend developer and work for top tech companies where I can build impactful software products.</p>
+            </div>
+        </div>
+
+        <section class="interests">
+            <h2>Interests & Hobbies</h2>
+            <div class="interests-grid">
+                <div class="interest-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Coding</h3>
+                    <p>Building Software applications and solving complex problems</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-music"></i>
+                    <h3>Music</h3>
+                    <p>pop and melody music</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-suitcase-rolling"></i>
+                    <h3>Travel</h3>
+                    <p>Enjoy moments and beautiful landscapes</p>
+                </div>
+               
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2025 AMAR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

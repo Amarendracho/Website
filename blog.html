@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .blog-section {
+            max-width: 800px;
+            margin: 120px auto 50px;
+            padding: 0 20px;
+        }
+
+        .blog-post {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .blog-meta {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .blog-meta i {
+            color: #3498db;
+        }
+
+        .blog-title {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .blog-excerpt {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .read-more {
+            display: inline-block;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .read-more:hover {
+            color: #2980b9;
+        }
+
+        .blog-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .blog-tag {
+            background: #f0f3f6;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            color: #2c3e50;
+        }
+
+        @media (max-width: 768px) {
+            .blog-title {
+                font-size: 1.5rem;
+            }
+
+            .blog-meta {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Amar'$</div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="blog-section">
+        <h1>Blog Posts</h1>
+        <p>Thoughts, tutorials, and insights about New Technologys like AI, ML, CLOUD, etc.</p>
+
+
+        <!-- Blog Post 1 -->
+        <article class="blog-post">
+            <div class="blog-meta">
+                <span><i class="far fa-calendar"></i> April 1, 2025</span>
+                <span><i class="far fa-clock"></i> 8 min read</span>
+                <span><i class="far fa-folder"></i> Chat Gpt</span>
+            </div>
+            <h2 class="blog-title">Open-AI Models and chat GPT Evolution.</h2>
+            <p class="blog-excerpt">
+                In today's world, the chat GPT is the most popular and used AI model. It is a language model that can generate text, answer questions, and help with a varity of tasks. We are in the 2nd generation/evolution of AI models. Next generation of AI models will be more advances and more accurate using teh latest technologies like LLM, RAG, MCP, etc..
+            </p>
+            <div class="blog-tags">
+                <span class="blog-tag">Open-AI</span>
+                <span class="blog-tag">LLM</span>
+                <span class="blog-tag">AGENTS/RAG</span>
+                <span class="blog-tag">MCP</span>
+            </div>
+            
+        </article>
+
+
+        <!-- Blog Post 2 -->
+        <article class="blog-post">
+            <div class="blog-meta">
+                <span><i class="far fa-calendar"></i> March 1, 2024</span>
+                <span><i class="far fa-clock"></i> 15 Hours read</span>
+                <span><i class="far fa-folder"></i> OPEN-AI</span>
+            </div>
+            <h2 class="blog-title">The Future of AI and it's Impact on the world.</h2>
+            <p class="blog-excerpt">
+                As we progress through 2024, the AI landscape continues to evolve at a rapid pace. From AI-powered development tools to the rise of Web Assembly, this post explores the key trends shaping the future of web development and how developers can stay ahead of the curve.
+            </p>
+            <div class="blog-tags">
+                <span class="blog-tag">Artificial Intelligence</span>
+                <span class="blog-tag">Technology</span>
+                <span class="blog-tag">Trends</span>
+            </div>
+            
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

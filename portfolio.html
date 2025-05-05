@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .portfolio-section {
+            max-width: 1200px;
+            margin: 120px auto 50px;
+            padding: 0 20px;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 20px;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .project-description {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .project-tools {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .tool-tag {
+            background: #f0f3f6;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            color: #2c3e50;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .project-links a {
+            color: #3498db;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .project-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Am@r's</div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="portfolio-section">
+        <h1>My Projects</h1>
+        <p>Here are some of my recent projects that showcase my skills and experience.</p>
+
+        <div class="portfolio-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Equi.png" alt="Project 1">
+                </div>
+                <div class="project-content">
+                    <h2 class="project-title">Commercial-Bureau-Report</h2>
+                    <p class="project-description">Collects and stores information about your credit history for Commercial and Consumer.</p>
+                    <div class="project-tools">
+                        <span class="tool-tag">JAVA</span>
+                        <span class="tool-tag">CASSANDRA</span>
+                        <span class="tool-tag">TALEND</span>
+                        <span class="tool-tag">RESTAPI</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="equi.png" alt="Project 2">
+                </div>
+                <div class="project-content">
+                    <h2 class="project-title">Commercial Data Extraction</h2>
+                    <p class="project-description">Commercail Data Extraction, Taking the data from Operations team and Extract the data with the help of Talend and store it in Cassndra.</p>
+                    <div class="project-tools">
+                        <span class="tool-tag">JAVA</span>
+                        <span class="tool-tag">CASSANDRA</span>
+                        <span class="tool-tag">TALEND</span>
+                        <span class="tool-tag">RESTAPI</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="LinceSoft.jpeg" alt="Project 3">
+                </div>
+                <div class="project-content">
+                    <h2 class="project-title">School Managment System</h2>
+                    <p class="project-description">Manage the school data and create the reports and store the data into teh database. Hosted on AWS</p>
+                    <div class="project-tools">
+                        <span class="tool-tag">HTML5</span>
+                        <span class="tool-tag">CSS3</span>
+                        <span class="tool-tag">JAVASCRIPT</span>
+                        <span class="tool-tag">BOOTSTRAP</span>
+                        <span class="tool-tag">AWS</span>
+                        <span class="tool-tag">JAVA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2025 AMAR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
